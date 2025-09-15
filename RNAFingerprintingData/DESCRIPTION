@@ -1,0 +1,17 @@
+Package: RNAFingerprintingData
+Type: Package
+Title: RNA Fingerprinting Data
+Version: 0.1.0
+Authors@R: 
+    person("Isabella", "Grabski", , "igrabski@nygenome.org", role = c("aut", "cre"))
+Description: Precomputed dictionaries for use with RNA fingerprinting.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    org.Hs.eg.db,
+    AnnotationDbi,
+    SeuratObject
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.2.3
