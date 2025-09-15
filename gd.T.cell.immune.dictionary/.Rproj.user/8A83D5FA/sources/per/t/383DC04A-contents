@@ -1,0 +1,22 @@
+# RNA Fingerprinting 
+
+## Installation
+
+You can install the suggested dependency `fingerprinting.data.internal` for access to precomputed fingerprints as follows:
+
+```
+remotes::install_url("https://github.com/igrabski/fingerprinting.data.internal/raw/main/fingerprinting.data.internal_0.1.0.tar.gz")
+```
+
+Then to install this package, you can first clone the repository:
+
+```
+git clone https://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@github.com/igrabski/fingerprinting.internal.git
+```
+
+Then in `R`: 
+
+```
+options(future.globals.maxSize = 10 * 1024^3)
+remotes::install_local("path/to/repo", build_vignettes = FALSE)
+```
