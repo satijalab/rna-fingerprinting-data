@@ -15,3 +15,5 @@ AvailableDictionaries()
 InstallPrecomputedDictionary(name = 'gwps')
 gwps_dictionary <- LoadPrecomputedDictionary(name = 'gwps')
 ```
+
+We are currently in the process of extending this package so that anyone can submit their own dictionaries; in the mean time, if you are interested in contributing, please reach out!
