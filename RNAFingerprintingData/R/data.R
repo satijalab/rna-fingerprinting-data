@@ -132,7 +132,6 @@ count_numbered_datasets <- function(name, pkg, max_check = 100) {
 #' @return A set of pre-computed dictionary
 #'
 #' @importFrom SeuratObject CreateSeuratObject
-#' @importFrom SeuratObject SetAssayData
 #' @importFrom SeuratObject GetAssayData
 #'
 #' @export
@@ -197,8 +196,7 @@ LoadPrecomputedDictionary <- function(
   )
 
   data <- CreateSeuratObject(counts = data)
-  data <- SetAssayData(data, layer = 'scale.data',
-                       new.data = GetAssayData(data, layer = 'counts'))
+  data[["RNA"]]$scale.data <- as.matrix(GetAssayData(data, layer = 'counts'))
 
   # Put into dictionary object
   dictionary <- structure(
